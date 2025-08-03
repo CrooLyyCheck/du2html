@@ -24,7 +24,7 @@ Internet access for Bootstrap 5 assets (loaded from CDN)
 Usage
 Run du on your system and save output to a file (this make to run in backgroud, you can even close connection to terminal and process don't be closed. Check with btop or htop command this process is still running, or monit output file size):
 ```bash
-nohup du -h /mnt/mydataset --max-depth=10 > ./du-output-$(date +%Y-%m-%d).txt 2>&1 &
+nohup du -h /mnt/mydataset --max-depth=10 > ./du-output-$(date +%Y-%m-%d_%H-%M-%S).txt 2>&1 &
 ```
 (Make sure the max-depth and path are set to your needs. Adjust command as needed.)
 
