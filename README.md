@@ -4,7 +4,7 @@ du2html is a Python script that converts the output of the du (disk usage) comma
 Features
 Parses du output files where each line contains size and path separated by a tab (\t), e.g.:
 
-4.0K	/mnt/disk1/4k.file
+4.0K	/mnt/disk1/4k.file<br>
 8.0K	/mnt/disk1/some/awesone/files/pictures
 Ignores garbage lines such as status messages (nohup: ignoring input).
 
@@ -23,14 +23,15 @@ Internet access for Bootstrap 5 assets (loaded from CDN)
 
 Usage
 Run du on your system and save output to a file (this make to run in backgroud, you can even close connection to terminal and process don't be closed. Check with btop or htop command this process is still running, or monit output file size):
-
+```bash
 nohup du -h /mnt/mydataset --max-depth=10 > ./du-output-$(date +%Y-%m-%d).txt 2>&1 &
-
+```
 (Make sure the max-depth and path are set to your needs. Adjust command as needed.)
 
 Run the script:
-
+```bash
 python du2html.py du-output.txt output.html
+```
 Open output.html in a modern web browser (Chrome, Firefox, Edge, Safari).
 
 Click the + button next to any folder to expand and explore its subdirectories.
