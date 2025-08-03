@@ -4,7 +4,6 @@ du2html is a Python script that converts the output of the du (disk usage) comma
 Features
 Parses du output files where each line contains size and path separated by a tab (\t), e.g.:
 
-text
 4.0K	/mnt/disk1/4k.file
 8.0K	/mnt/disk1/some/awesone/files/pictures
 Ignores garbage lines such as status messages (nohup: ignoring input).
