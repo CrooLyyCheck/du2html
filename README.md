@@ -21,7 +21,7 @@ Python 3.6 or newer
 
 Internet access for Bootstrap 5 assets (loaded from CDN)
 
-Usage
+# Usage
 Run du on your system and save output to a file (this make to run in backgroud, you can even close connection to terminal and process don't be closed. Check with btop or htop command this process is still running, or monit output file size):
 ```bash
 nohup du -h /mnt/mydataset --max-depth=10 > ./du-output-$(date +%Y-%m-%d_%H-%M-%S).txt 2>&1 &
@@ -36,10 +36,10 @@ Open output.html in a modern web browser (Chrome, Firefox, Edge, Safari).
 
 Click the + button next to any folder to expand and explore its subdirectories.
 
-Installation
+# Installation
 Simply download or clone the script du2html.py. No external Python libraries needed beyond the standard library.
 
-How it works
+# How it works
 The script reads the provided du output file.
 
 It builds an in-memory nested dictionary representing the directory tree.
@@ -52,8 +52,8 @@ JavaScript code lazily renders subtrees on demand when user expands folders, mak
 
 This project is open source and available under the MIT License.
 
-Contributing
+# Contributing
 Feel free to submit issues or pull requests for improvements, bug fixes, or new features!
 
-Contact
+# Contact
 For questions or feedback, please open an issue on GitHub or contact the maintainer.
